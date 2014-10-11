@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  list_id: 
+  title: MyString
+  notes: MyText
+  due: 2014-10-11
+  is_complete: false
+
+two:
+  list_id: 
+  title: MyString
+  notes: MyText
+  due: 2014-10-11
+  is_complete: false
