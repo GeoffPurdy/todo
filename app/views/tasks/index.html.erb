@@ -1,6 +1,6 @@
 <h1>Listing tasks</h1>
 
-<table>
+<table class="table table-responsive">
   <thead>
     <tr>
       <th>List</th>
@@ -20,9 +20,9 @@
         <td><%= task.notes %></td>
         <td><%= task.due %></td>
         <td><%= task.is_complete %></td>
-        <td><%= link_to 'Show', task %></td>
-        <td><%= link_to 'Edit', edit_task_path(task) %></td>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', task, class: "btn btn-link"  %></td>
+        <td><%= link_to 'Edit', edit_task_path(task), class: "btn btn-link"  %></td>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link"  %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Task', new_task_path %>
+<%= link_to 'New Task', new_task_path, class: "btn btn-link"  %>
